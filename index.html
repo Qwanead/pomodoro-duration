@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro duration</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <h1>Расчет длительности Pomodoro</h1>
+    <form>
+
+      <div class="inputs">
+        <div class="input">
+          <label for="duration-id">Длительность одного Pomodoro</label>
+          <input type="text" id="duration-id">
+        </div>
+
+        <div class="input">
+          <label for="short-break-id">Короткий перерыв</label>
+          <input type="text" id="short-break-id">
+        </div class="input">
+
+        <div class="input">
+          <label for="long-break-id">Длиный перерыв</label>
+          <input type="text" id="long-break-id">
+        </div class="input">
+
+        <div class="input">
+          <label for="Pomodoro-in-block-id">Pomodoro в блоке</label>
+          <input type="text" id="Pomodoro-in-block-id">
+        </div>
+
+        <div class="input">
+          <label for="block-count-id">Количество блоков</label>
+          <input type="text" id="block-count-id">
+        </div>
+      </div>
+
+      <div class="result">
+        <label for="break-time-id">Время перерывов</label>
+        <input type="text" id="break-time-id" readonly>
+
+        <label for="work-time-id">Время работы</label>
+        <input type="text" id="work-time-id" readonly>
+
+        <label for="result-id">Общее время</label>
+        <input type="text" id="result-id" readonly>
+      </div>
+
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
