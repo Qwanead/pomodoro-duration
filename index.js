@@ -21,6 +21,7 @@ const calculate = () => {
   };
 
   const breakTime = (PomodoroInBlockElement.value - 1) * shortBreakElement.value
+  * blockCountElement.value
   + (blockCountElement.value - 1) * longBreakElement.value;
 
   const workTime = durationElement.value * PomodoroInBlockElement.value
