@@ -1,7 +1,7 @@
 let durationElement = document.querySelector('#duration-id');
 let shortBreakElement = document.querySelector('#short-break-id');
 let longBreakElement = document.querySelector('#long-break-id');
-let PomodoroInBlockElement = document.querySelector('#Pomodoro-in-block-id');
+let pomodoroInBlockElement = document.querySelector('#Pomodoro-in-block-id');
 let blockCountElement = document.querySelector('#block-count-id');
 let breakTimeElement = document.querySelector('#break-time-id');
 let workTimeElement = document.querySelector('#work-time-id');
@@ -20,11 +20,11 @@ const calculate = () => {
     return `${hours}:${minutes}`
   };
 
-  const breakTime = (PomodoroInBlockElement.value - 1) * shortBreakElement.value
+  const breakTime = (pomodoroInBlockElement.value - 1) * shortBreakElement.value
   * blockCountElement.value
   + (blockCountElement.value - 1) * longBreakElement.value;
 
-  const workTime = durationElement.value * PomodoroInBlockElement.value
+  const workTime = durationElement.value * pomodoroInBlockElement.value
   * blockCountElement.value;
 
   breakTimeElement.value = convertTime(breakTime);
@@ -36,5 +36,5 @@ const calculate = () => {
 durationElement.oninput = calculate;
 shortBreakElement.oninput = calculate;
 longBreakElement.oninput = calculate;
-PomodoroInBlockElement.oninput = calculate;
+pomodoroInBlockElement.oninput = calculate;
 blockCountElement.oninput = calculate;
