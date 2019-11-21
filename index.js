@@ -33,6 +33,8 @@ const calculate = () => {
 
 };
 
+calculate();
+
 durationElement.oninput = calculate;
 shortBreakElement.oninput = calculate;
 longBreakElement.oninput = calculate;
